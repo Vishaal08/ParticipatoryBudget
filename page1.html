@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participatory Budget</title>
+    <!-- Include external CSS files -->
+    <link rel="stylesheet" href="path/to/rsuite.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="app.css">
+    <style>
+        /* Custom styles if needed */
+    </style>
+</head>
+<body style="background-color: #F0F0F0;">
+
+    <div style="background-color: rgb(49, 188, 193); padding: 10px; display: flex; justify-content: center;"><h2 style="text-align: center; color: white; font-weight: 500;">Participatory Budget</h2></div>
+        <!-- <h2 style="text-align: center; color: white; font-weight: 500;">Participatory Budget</h2> -->
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 25px; margin-bottom: 30px;">
+        <div style="margin-right: 20px;">
+            <div class="custom-dropdown-container rs-dropdown rs-dropdown-placement-bottom-start" style="border: 1px solid black; color: black; background-color: rgb(49, 188, 193);">
+                <button id="menubutton-department" role="button" aria-haspopup="menu" aria-controls="menu-department" type="button" class="rs-dropdown-toggle rs-btn rs-btn-default" onclick="toggleDropdown('menu-department')">Transportation<svg width="1em"; height="1em"; viewBox="0 0 21 32" fill="currentColor" aria-hidden="true" focusable="false" class="rs-dropdown-toggle-caret rs-icon" aria-label="angle down" data-category="legacy"><path d="M19.196 13.143a.612.612 0 01-.179.411l-8.321 8.321c-.107.107-.268.179-.411.179s-.304-.071-.411-.179l-8.321-8.321c-.107-.107-.179-.268-.179-.411s.071-.304.179-.411l.893-.893a.582.582 0 01.411-.179c.143 0 .304.071.411.179l7.018 7.018 7.018-7.018c.107-.107.268-.179.411-.179s.304.071.411.179l.893.893a.617.617 0 01.179.411z"></path></svg><span class="rs-ripple-pond"><span class="rs-ripple"></span></span></button>
+                <ul class="custom-dropdown-container rs-dropdown-menu" id="menu-department" role="menu" aria-labelledby="menubutton-department" tabindex="0" hidden>
+                    <!-- Department options here -->
+                </ul>
+            </div>
+        </div>
+
+        
+
+
+
+        <div style="margin-right: 20px;">
+            <div class="custom-dropdown-container rs-dropdown rs-dropdown-placement-bottom-start" style="border: 1px solid black; color: black; background-color: rgb(49, 188, 193);">
+                <button id="menubutton-location" role="button" aria-haspopup="menu" aria-controls="menu-location" type="button" class="rs-dropdown-toggle rs-btn rs-btn-default" onclick="toggleDropdown('menu-location')">Aundh<svg width="1em" height="1em" viewBox="0 0 21 32" fill="currentColor" aria-hidden="true" focusable="false" class="rs-dropdown-toggle-caret rs-icon" aria-label="angle down" data-category="legacy"><path d="M19.196 13.143a.612.612 0 01-.179.411l-8.321 8.321c-.107.107-.268.179-.411.179s-.304-.071-.411-.179l-8.321-8.321c-.107-.107-.179-.268-.179-.411s.071-.304.179-.411l.893-.893a.582.582 0 01.411-.179c.143 0 .304.071.411.179l7.018 7.018 7.018-7.018c.107-.107.268-.179.411-.179s.304.071.411.179l.893.893a.617.617 0 01.179.411z"></path></svg><span class="rs-ripple-pond"><span class="rs-ripple"></span></span></button>
+                <ul class="custom-dropdown-container rs-dropdown-menu" id="menu-location" role="menu" aria-labelledby="menubutton-location" tabindex="0" hidden>
+                    <!-- Location options here -->
+                </ul>
+            </div>
+        </div>
+        <div style="margin-right: 20px;">
+            <div class="custom-dropdown-container rs-dropdown rs-dropdown-placement-bottom-start" style="border: 1px solid black; color: black; background-color: rgb(49, 188, 193);">
+                <button id="menubutton-project" role="button" aria-haspopup="menu" aria-controls="menu-project" type="button" class="rs-dropdown-toggle rs-btn rs-btn-default" onclick="toggleDropdown('menu-project')">Cycle lane construction<svg width="1em" height="1em" viewBox="0 0 21 32" fill="currentColor" aria-hidden="true" focusable="false" class="rs-dropdown-toggle-caret rs-icon" aria-label="angle down" data-category="legacy"><path d="M19.196 13.143a.612.612 0 01-.179.411l-8.321 8.321c-.107.107-.268.179-.411.179s-.304-.071-.411-.179l-8.321-8.321c-.107-.107-.179-.268-.179-.411s.071-.304.179-.411l.893-.893a.582.582 0 01.411-.179c.143 0 .304.071.411.179l7.018 7.018 7.018-7.018c.107-.107.268-.179.411-.179s.304.071.411.179l.893.893a.617.617 0 01.179.411z"></path></svg><span class="rs-ripple-pond"><span class="rs-ripple"></span></span></button>
+                <ul class="custom-dropdown-container rs-dropdown-menu" id="menu-project" role="menu" aria-labelledby="menubutton-project" tabindex="0" hidden>
+                    <!-- Project options here -->
+                </ul>
+            </div>
+        </div>
+        <div style="margin-right: 20px;">
+            <div style="border: 3px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; padding: 5px;">
+                <h6>Project Count = 1</h6>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div style="margin-right: 20px;">
+            <div style="border: 3px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; padding: 5px;">
+                <h6>Total Budget = 80 Lakhs</h6>
+            </div>
+        </div>
+
+
+        <div style="margin-right: 20px;">
+            <div class="custom-dropdown-container rs-dropdown rs-dropdown-placement-bottom-start" style="border: 1px solid black; color: black; background-color: rgb(49, 188, 193);">
+                <button id="menubutton-time" role="button" aria-haspopup="menu" aria-controls="menu-time" type="button" class="rs-dropdown-toggle rs-btn rs-btn-default" onclick="toggleDropdown('menu-time')">Select Time Frame<svg width="1em" height="1em" viewBox="0 0 21 32" fill="currentColor" aria-hidden="true" focusable="false" class="rs-dropdown-toggle-caret rs-icon" aria-label="angle down"><path d="M19.196 13.143a.612.612 0 01-.179.411l-8.321 8.321c-.107.107-.268.179-.411.179s-.304-.071-.411-.179l-8.321-8.321c-.107-.107-.179-.268-.179-.411s.071-.304.179-.411l.893-.893a.582.582 0 01.411-.179c.143 0 .304.071.411.179l7.018 7.018 7.018-7.018c.107-.107.268-.179.411-.179s.304.071.411.179l.893.893a.617.617 0 01.179.411z"></path></svg><span class="rs-ripple-pond"><span class="rs-ripple"></span></span></button>
+                <ul class="custom-dropdown-container rs-dropdown-menu" id="menu-time" role="menu" aria-labelledby="menubutton-time" tabindex="0" hidden>
+                    
+                    <li class="rs-dropdown-item" role="menuitem" tabindex="-1"><span class="rs-dropdown-item-content rs-text">2017 - 2019</span></li>
+                <li class="rs-dropdown-item" role="menuitem" tabindex="-1"><span class="rs-dropdown-item-content rs-text">2019 - 2021</span></li>
+                <li class="rs-dropdown-item" role="menuitem" tabindex="-1"><span class="rs-dropdown-item-content rs-text">2021 - 2023</span></li>
+                <li class="rs-dropdown-item" role="menuitem" tabindex="-1"><span class="rs-dropdown-item-content rs-text">2023 - 2024</span></li>
+                <li class="rs-dropdown-item" role="menuitem" tabindex="-1"><span class="rs-dropdown-item-content rs-text">2024 - Present</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div> -->
+            
+        
+
+
+        <div>
+            <button type="button" class="rs-btn rs-btn-default" style="background-color: rgb(49, 188, 193); color: white;">Clear Selection<span class="rs-ripple-pond"><span class="rs-ripple"></span></span></button>
+        </div>
+    </div>
+    
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            dropdown.hidden = !dropdown.hidden;
+        }
+    </script>
+<div style="display: flex; justify-content: center; margin-top: 25px; margin-bottom: 30px;">
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Name:</b> Cycle Lane</div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Department:</b> Transportation</div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Location:</b> Aundh</div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Fund:</b> 80 Lakhs</div>
+    </div>
+</div>
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;">
+            <b>Duration:</b> 10 Months<br>
+            <b>Start Date:</b> January 2017<br>
+            <b>End Date:</b> October 2017
+        </div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Status:</b> Completed</div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Beneficiaries:</b> Cyclists</div>
+        <div style="width: 250px; height: 120px; border: 1px solid black; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 20px; margin-bottom: 20px;"><b>Project Description:</b> Construction of cycle lanes to promote eco-friendly transportation and reduce traffic.</div>
+    </div>
+</div>
+
+
+
+<div style="display: flex; flex-direction: column;">
+    <div style="display: flex; justify-content: center;">
+        
+        <img src="./transport.PNG" alt="Image 2" style="width: 90vh; height: 60vh; margin: 5px; border-radius: 10px; border: 2px solid #ccc; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        <img src="./P11.PNG" alt="Image 1" style="width: 90vh; height: 60vh; margin: 5px; border-radius: 10px; border: 2px solid #ccc; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    </div>
+
+
+
